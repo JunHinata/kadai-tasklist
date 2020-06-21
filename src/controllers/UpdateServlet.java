@@ -56,9 +56,9 @@ public class UpdateServlet extends HttpServlet {
                 em.close();
 
                 // フォームに初期値設定
-                request.getSession().setAttribute("_token", request.getSession().getId());
-                request.getSession().setAttribute("task", t);
-                request.getSession().setAttribute("errors", errors);
+                request.setAttribute("_token", request.getSession().getId());
+                request.setAttribute("task", t);
+                request.setAttribute("errors", errors);
 
                 RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/tasks/edit.jsp");
                 rd.forward(request, response);
