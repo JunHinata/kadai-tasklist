@@ -9,8 +9,8 @@
     </div>
 </c:if>
 <label for="content">タスク</label><br/>
-<imput type="text" name="content" value="${task.content}" />
+<input type="text" name="content" value="${task.content}" />
 <br/><br/>
 
-<imput type="hidden" name="_token" value="${_token}" />
+<input type="hidden" name="_token" value="${_token}" />
 <button type="submit">登録</button>
